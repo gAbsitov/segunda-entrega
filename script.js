@@ -30,7 +30,7 @@ const typeColors = {
 const searchPokemon = event => {
     event.preventDefault();
     const { value } = event.target.pokemon;
-    fetch(`https://pokeapi.co/api/v2/pokemon/${value.toLowerCase()}`)  //Api de pokemones
+    fetch(`https://pokeapi.co/api/v2/pokemon/${value.toLowerCase()}`)  //Api de pokemoness
         .then(data => data.json())
         .then(response => renderPokemonData(response))
         .catch(err => renderNotFound())
